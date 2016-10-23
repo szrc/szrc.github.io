@@ -1,1 +1,712 @@
-test
+<html>
+  <head>
+    <title>Alex Kulesza</title>
+    
+    <style type="text/css">
+      body { 
+	  font-family: sans-serif; 
+	  background-color: #666;
+      }
+
+      body a {
+	  color: #333;
+      }
+      
+      #container {
+	  margin: 40px auto;
+	  padding: 50px;
+	  background-color: #eee;
+	  width: 760px;
+          position: relative;
+      }
+
+      #photo {
+        position: absolute;
+        right: 50px;
+        top: 50px;
+      }
+
+      span.label {
+	  font-weight: bold;
+	  color: #555;
+      }
+     
+      div.section {
+          margin-top: 50px;
+      }
+      
+      div.ref {
+	  margin-top: 20px;
+      }
+
+      span.title {
+	  font-weight: bold;
+	  color: #555;
+      }
+
+      span.authors, span.venue {
+	  font-size: 90%;
+      }
+
+      span.award {
+	  font-size: 90%;
+	  color: #800;
+      }
+
+      div.bibtex { 
+	  display: none;
+	  background-color: #aaa;
+	  margin: 10px;
+	  padding: 5px 20px;
+      }
+    </style>
+
+    <script language="javascript">
+      function toggle(id) {
+        var el = document.getElementById(id);
+        if(el.style.display == 'block') {
+          el.style.display = 'none';
+        } else {
+          el.style.display = 'block';
+        }
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container">
+
+    <div id="photo">
+      <img src="alex.jpg" height="202" width="400">
+    </div>
+    
+    <div id="top">
+      <h1>Alex Kulesza</h1>
+      
+      <div class="info">
+	<p class="desc">
+	  Postdoctoral Fellow<br/>
+	  Computer Science and Engineering<br/>
+	  University of Michigan
+	</p>
+	<p class="info">
+	  <span class="label">Office:</span> 4817 BBB<br/>
+	  <span class="label">Email:</span> lastname umich edu
+	</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Code</h2>
+
+      <div class="ref">
+	<span class="title">Determinantal point processes</span><br />
+	<span class="authors">MATLAB sampling algorithms for DPPs, k-DPPs, dual DPPs, and sequence SDPPs:</span>
+	<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/code/dpp.tgz">tgz</a></span>
+      </div>
+      
+    </div>
+    
+    <div class="section">
+      <h2>Publications</h2>
+
+<div class="ref">
+<span class="title">Abstraction selection in model-based reinforcement learning</span><br/>
+<span class="authors">Nan Jiang, Alex Kulesza, and Satinder Singh.</span>
+<span class="venue">ICML 2015.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/abstraction_icml15.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('jiang2015abstraction')" href="#">bib</a></span>
+<div id="jiang2015abstraction" class="bibtex"><pre>
+@inproceedings{jiang2015abstraction,
+  title = 	{Abstraction Selection in Model-Based Reinforcement Learning},
+  author = 	{Nan Jiang and Alex Kulesza and Satinder Singh},
+  booktitle = 	{Proceedings of the 32nd International Conference on
+		 Machine Learning},
+  year = 	{2015},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">The dependence of effective planning horizon on model accuracy</span><br/>
+<span class="authors">Nan Jiang, Alex Kulesza, Satinder Singh, and Richard Lewis.</span>
+<span class="venue">AAMAS 2015.</span><br/>
+<span class="award">AAMAS 2015 Best Paper Award</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/horizon_aamas15.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('jiang2015dependence')" href="#">bib</a></span>
+<div id="jiang2015dependence" class="bibtex"><pre>
+@inproceedings{jiang2015dependence,
+  title = 	{The Dependence of Effective Planning Horizon on
+		 Model Accuracy},
+  author = 	{Nan Jiang and Alex Kulesza and Satinder Singh and
+		 Richard Lewis},
+  booktitle = 	{Proceedings of the 14th International Conference on
+		 Autonomous Agents and Multiagent Systems},
+  year = 	{2015},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Low-rank spectral learning with weighted loss functions</span><br/>
+<span class="authors">Alex Kulesza, Nan Jiang, and Satinder Singh.</span>
+<span class="venue">AISTATS 2015.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/lowrank_aistats15.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('kulesza2015lowrank')" href="#">bib</a></span>
+<div id="kulesza2015lowrank" class="bibtex"><pre>
+@inproceedings{kulesza2015lowrank,
+  title = 	{Low-Rank Spectral Learning with Weighted Loss Functions},
+  author = 	{Alex Kulesza and Nan Jiang and Satinder
+		 Singh},
+  booktitle = 	{Proceedings of the 18th International Conference on
+		 Artificial Intelligence and Statistics},
+  year = 	{2015},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Spectral learning of predictive state representations with insufficient statistics</span><br/>
+<span class="authors">Alex Kulesza, Nan Jiang, and Satinder Singh.</span>
+<span class="venue">AAAI 2015.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/insufficient_aaai15.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('kulesza2015spectral')" href="#">bib</a></span>
+<div id="kulesza2015spectral" class="bibtex"><pre>
+@inproceedings{kulesza2015spectral,
+  title = 	{Spectral Learning of Predictive State
+		 Representations with Insufficient Statistics},
+  author = 	{Alex Kulesza and Nan Jiang and Satinder Singh},
+  booktitle = 	{Proceedings of the 29th AAAI Conference on
+		 Artificial Intelligence},
+  year = 	{2015},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">An efficient algorithm for the symmetric principal minor assignment problem</span><br/>
+<span class="authors">Justin Rising, Alex Kulesza, and Ben Taskar.</span>
+<span class="venue">Linear Algebra and its Applications, May 2015.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/spmap_laa14.pdf">pdf</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/code/sym_assignment.tgz">code</a></span>
+<span class="link"><a onclick="return toggle('rising2015efficient')" href="#">bib</a></span>
+<div id="rising2015efficient" class="bibtex"><pre>
+@article{rising2015efficient,
+  title = 	{An Efficient Algorithm for the Symmetric Principal
+		 Minor Assignment Problem},
+  author = 	{Justin Rising and Alex Kulesza and Ben Taskar},
+  journal = 	{Linear Algebra and its Applications},
+  volume = 	{473},
+  pages = 	{126--144},
+  month = 	{May},
+  year = 	{2015},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Expectation-maximization for learning determinantal point processes</span><br/>
+<span class="authors">Jennifer Gillenwater, Alex Kulesza, Emily Fox, and Ben Taskar.</span>
+<span class="venue">NIPS 2014.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/em_nips14.pdf">pdf</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/em_nips14_supp.pdf">supplement</a></span>
+<span class="link"><a onclick="return toggle('gillenwater2014expectation')" href="#">bib</a></span>
+<div id="gillenwater2014expectation" class="bibtex"><pre>
+@inproceedings{gillenwater2014expectation,
+  title = 	{Expectation-Maximization for Learning Determinantal
+		 Point Processes},
+  author = 	{Jennifer Gillenwater and Alex Kulesza and Emily Fox
+		 and Ben Taskar},
+  booktitle = 	{Advances in Neural Information Processing Systems
+		 27},
+  year = 	{2014},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">A repository of state of the art and competitive baseline summaries for generic news summarization</span><br/>
+<span class="authors">Kai Hong, John M. Conroy, Benoit Favre, Alex Kulesza, Hui Lin, and Ani Nenkova.</span>
+<span class="venue">LREC 2014.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/summarization_lrec14.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('hong2014repository')" href="#">bib</a></span>
+<div id="hong2014repository" class="bibtex"><pre>
+@inproceedings{hong2014repository,
+  title = 	{A Repository of State of the Art and Competitive
+		 Baseline Summaries for Generic News Summarization},
+  author = 	{Kai Hong and John M. Conroy and Benoit Favre and
+		 Alex Kulesza and Hui Lin and Ani Nenkova},
+  booktitle = 	{Language Resources and Evaluation Conference 2014},
+  year = 	{2014},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Low-rank spectral learning</span><br/>
+<span class="authors">Alex Kulesza, Raj Rao Nadakuditi, and Satinder Singh.</span>
+<span class="venue">AISTATS 2014.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/lowrank_aistats14.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('kulesza2014lowrank')" href="#">bib</a></span>
+<div id="kulesza2014lowrank" class="bibtex"><pre>
+@inproceedings{kulesza2014lowrank,
+  title = 	{Low-Rank Spectral Learning},
+  author = 	{Alex Kulesza and Raj Rao Nadakuditi and Satinder
+		 Singh},
+  booktitle = 	{Proceedings of the 17th Conference on Artificial
+		 Intelligence and Statistics},
+  year = 	{2014},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Social collaborative retrieval</span><br/>
+<span class="authors">Ko-Jen Hsiao, Alex Kulesza, and Alfred O. Hero.</span>
+<span class="venue">Journal of Selected Topics in Signal Processing, August 2014.</span><br/>
+<span class="link"><a href="http://arxiv.org/abs/1404.2342">arxiv version</a></span>
+<span class="link"><a onclick="return toggle('hsiao2014social2')" href="#">bib</a></span>
+<div id="hsiao2014social2" class="bibtex"><pre>
+@article{hsiao2014social2,
+  title = 	{Social Collaborative Retrieval},
+  author = 	{Ko-Jen Hsiao and Alex Kulesza and Alfred O. Hero},
+  journal = 	{Journal of Selected Topics in Signal Processing},
+  volume = 	{8},
+  number = 	{4},
+  pages = 	{680--689},
+  month = 	{Aug},
+  year = 	{2014},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Multi-layer graph analysis for dynamic social networks</span><br/>
+<span class="authors">Brandon Oselio, Alex Kulesza, and Alfred O. Hero.</span>
+<span class="venue">Journal of Selected Topics in Signal Processing, August 2014.</span><br/>
+<span class="link"><a href="http://arxiv.org/abs/1309.5124">arxiv version</a></span>
+<span class="link"><a onclick="return toggle('oselio2014multilayer')" href="#">bib</a></span>
+<div id="oselio2014multilayer" class="bibtex"><pre>
+@article{oselio2014multilayer,
+  title = 	{Multi-Layer Graph Analysis for Dynamic Social
+		 Networks},
+  author = 	{Brandon Oselio and Alex Kulesza and Alfred O. Hero},
+  journal = 	{Journal of Selected Topics in Signal Processing},
+  volume = 	{8},
+  number = 	{4},
+  pages = 	{514--523},
+  month = 	{Aug},
+  year = 	{2014},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Social collaborative retrieval</span><br/>
+<span class="authors">Ko-Jen Hsiao, Alex Kulesza, and Alfred O. Hero.</span>
+<span class="venue">WSDM 2014.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/social_wsdm14.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('hsiao2014social')" href="#">bib</a></span>
+<div id="hsiao2014social" class="bibtex"><pre>
+@inproceedings{hsiao2014social,
+  title = 	{Social Collaborative Retrieval},
+  author = 	{Ko-Jen Hsiao and Alex Kulesza and Alfred O. Hero},
+  booktitle = 	{Proceedings of the 7th International ACM Conference
+		 on Web Search and Data Mining},
+  year = 	{2014},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Adaptive regularization of weight vectors</span><br/>
+<span class="authors">Koby Crammer, Alex Kulesza, and Mark Dredze.</span>
+<span class="venue">Machine Learning, May 2013.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/arow_mlj13.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('crammer2013adaptive')" href="#">bib</a></span>
+<div id="crammer2013adaptive" class="bibtex"><pre>
+@article{crammer2013adaptive,
+  title = 	{Adaptive Regularization of Weight Vectors},
+  author = 	{Koby Crammer and Alex Kulesza and Mark Dredze},
+  journal = 	{Machine Learning},
+  volume = 	{91},
+  number = 	{2},
+  pages = 	{155--187},
+  year = 	{2013},
+  publisher = 	{Springer},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Nystr&ouml;m approximation for large-scale determinantal processes</span><br/>
+<span class="authors">Raja Hafiz Affandi, Alex Kulesza, Emily Fox, and Ben Taskar.</span>
+<span class="venue">AISTATS 2013.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/nystrom_aistats13.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('affandi2013nystrom')" href="#">bib</a></span>
+<div id="affandi2013nystrom" class="bibtex"><pre>
+@inproceedings{affandi2013nystrom,
+  title = 	{{N}ystr{\"o}m Approximation for Large-Scale
+		 Determinantal Processes},
+  author = 	{Raja Hafiz Affandi and Alex Kulesza and Emily Fox
+		 and Ben Taskar},
+  booktitle = 	{Proceedings of the 16th International Conference on
+		 Artificial Intelligence and Statistics},
+  year = 	{2013},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Determinantal point processes for machine learning</span><br/>
+<span class="authors">Alex Kulesza and Ben Taskar.</span>
+<span class="venue">Foundations and Trends in Machine Learning, December
+2012.</span><br/>
+<span class="link"><a href="http://arxiv.org/abs/1207.6083">updated arxiv version</a></span>
+<span class="link"><a onclick="return toggle('kulesza2012determinantal')" href="#">bib</a></span>
+<div id="kulesza2012determinantal" class="bibtex"><pre>
+@article{kulesza2012determinantal,
+  title = 	{Determinantal Point Processes for Machine Learning},
+  author = 	{Alex Kulesza and Ben Taskar},
+  journal = 	{Foundations and Trends in Machine Learning},
+  volume = 	{5},
+  number = 	{2--3},
+  year = 	{2012},
+  publisher = 	{Now Publishers},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Near-optimal MAP inference for determinantal point processes</span><br/>
+<span class="authors">Jennifer Gillenwater, Alex Kulesza, and Ben Taskar.</span>
+<span class="venue">NIPS 2012.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/dppmap_nips12.pdf">pdf</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/dppmap_nips12_supp.pdf">supplement</a></span>
+<span class="link"><a onclick="return toggle('gillenwater2012near')" href="#">bib</a></span>
+<div id="gillenwater2012near" class="bibtex"><pre>
+@inproceedings{gillenwater2012near,
+  title = 	{Near-Optimal {MAP} Inference for Determinantal Point
+		 Processes},
+  author = 	{Jennifer Gillenwater and Alex Kulesza and Ben
+		 Taskar},
+  booktitle = 	{Advances in Neural Information Processing Systems
+		 25},
+  year = 	{2012},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Learning with determinantal point processes</span><br/>
+<span class="authors">Alex Kulesza.</span>
+<span class="venue">Ph.D. thesis, 2012.</span><br/>
+<span class="award">2012 Morris and Dorothy Rubinoff Dissertation Award</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/thesis.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('kulesza2012learning')" href="#">bib</a></span>
+<div id="kulesza2012learning" class="bibtex"><pre>
+@phdthesis{kulesza2012learning,
+  title = 	{Learning with Determinantal Point Processes},
+  author = 	{Alex Kulesza},
+  school = 	{University of Pennsylvania},
+  year = 	{2012},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Markov determinantal point processes</span><br/>
+<span class="authors">Raja Hafiz Affandi, Alex Kulesza, and Emily Fox.</span>
+<span class="venue">UAI 2012.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/markov_uai12.pdf">pdf</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/markov_uai12_supp.pdf">supplement</a></span>
+<span class="link"><a onclick="return toggle('affandi2012markov')" href="#">bib</a></span>
+<div id="affandi2012markov" class="bibtex"><pre>
+@inproceedings{affandi2012markov,
+  title = 	{Markov determinantal point processes},
+  author = 	{Raja Hafiz Affandi and Alex Kulesza and Emily Fox},
+  booktitle = 	{Proceedings of the 28th Conference on Uncertainty in
+		 Artificial Intelligence},
+  year = 	{2012},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Discovering diverse and salient threads in document collections</span><br/>
+<span class="authors">Jennifer Gillenwater, Alex Kulesza, and Ben Taskar.</span>
+<span class="venue">EMNLP 2012.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/timelines_emnlp12.pdf">pdf</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/timelines_emnlp12_supp.pdf">supplement</a></span>
+<span class="link"><a onclick="return toggle('gillenwater2012discovering')" href="#">bib</a></span>
+<div id="gillenwater2012discovering" class="bibtex"><pre>
+@inproceedings{gillenwater2012discovering,
+  title = 	{Discovering Diverse and Salient Threads in Document
+		 Collections},
+  author = 	{Jennifer Gillenwater and Alex Kulesza and Ben
+		 Taskar},
+  booktitle = 	{Proceedings of the 2012 Conference on Empirical
+		 Methods in Natural Language Processing},
+  year = 	{2012},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">New H&#8734; bounds for the recursive least squares algorithm exploiting input structure</span><br/>
+<span class="authors">Koby Crammer, Alex Kulesza, and Mark Dredze.</span>
+<span class="venue">ICASSP 2012.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/hinf_icassp12.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('crammer2012new')" href="#">bib</a></span>
+<div id="crammer2012new" class="bibtex"><pre>
+@inproceedings{crammer2012new,
+  title = 	{New $H^\infty$ Bounds for the Recursive Least
+		 Squares Algorithm Exploiting Input Structure},
+  author = 	{Koby Crammer and Alex Kulesza and Mark Dredze},
+  booktitle = 	{Proceedings of the 2012 IEEE International
+		 Conference on Acoustics, Speech, and Signal
+		 Processing},
+  year = 	{2012},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Learning determinantal point processes</span><br/>
+<span class="authors">Alex Kulesza and Ben Taskar.</span>
+<span class="venue">UAI 2011.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/dpplearn_uai11.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('kulesza2011learning')" href="#">bib</a></span>
+<div id="kulesza2011learning" class="bibtex"><pre>
+@inproceedings{kulesza2011learning,
+  title = 	{Learning Determinantal Point Processes},
+  author = 	{Alex Kulesza and Ben Taskar},
+  booktitle = 	{Proceedings of the 27th Conference on Uncertainty in
+		 Artificial Intelligence},
+  year = 	{2011},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">k-DPPs: fixed-size determinantal point processes</span><br/>
+<span class="authors">Alex Kulesza and Ben Taskar.</span>
+<span class="venue">ICML 2011.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/kdpps_icml11.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('kulesza2011kdpps')" href="#">bib</a></span>
+<div id="kulesza2011kdpps" class="bibtex"><pre>
+@inproceedings{kulesza2011kdpps,
+  title = 	{{k-DPP}s: Fixed-Size Determinantal Point Processes},
+  author = 	{Alex Kulesza and Ben Taskar},
+  booktitle = 	{Proceedings of the 28th International Conference on
+		 Machine Learning},
+  year = 	{2011},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Structured determinantal point processes</span><br/>
+<span class="authors">Alex Kulesza and Ben Taskar.</span>
+<span class="venue">NIPS 2010.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/sdpps_nips10.pdf">pdf</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/sdpps_nips10_supp.pdf">supplement</a></span>
+<span class="link"><a onclick="return toggle('kulesza2011structured')" href="#">bib</a></span>
+<div id="kulesza2011structured" class="bibtex"><pre>
+@inproceedings{kulesza2011structured,
+  title = 	{Structured Determinantal Point Processes},
+  author = 	{Alex Kulesza and Ben Taskar},
+  booktitle = 	{Advances in Neural Information Processing Systems
+		 23},
+  year = 	{2011},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Empirical limitations on high-frequency trading profitability</span><br/>
+<span class="authors">Michael Kearns, Alex Kulesza, and Yuriy Nevmyvaka.</span>
+<span class="venue">Journal of Trading, Fall 2010.</span><br/>
+<span class="award">Journal of Trading Best Paper Award 2010</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/hft_jot10.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('kearns2010empirical')" href="#">bib</a></span>
+<div id="kearns2010empirical" class="bibtex"><pre>
+@article{kearns2010empirical,
+  title = 	{Empirical Limitations on High-Frequency Trading
+		 Profitability},
+  author = 	{Michael Kearns and Alex Kulesza and Yuriy Nevmyvaka},
+  journal = 	{The Journal of Trading},
+  volume = 	{5},
+  number = 	{4},
+  pages = 	{50--62},
+  year = 	{2010},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Exploiting feature covariance in high-dimensional online learning</span><br/>
+<span class="authors">Justin Ma, Alex Kulesza, Mark Dredze, Koby Crammer, Lawrence K. Saul, and Fernando Pereira.</span>
+<span class="venue">AISTATS 2010.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/diagfull_aistats10.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('ma2010exploiting')" href="#">bib</a></span>
+<div id="ma2010exploiting" class="bibtex"><pre>
+@inproceedings{ma2010exploiting,
+  title = 	{Exploiting Feature Covariance in High-Dimensional
+		 Online Learning},
+  author = 	{Justin Ma and Alex Kulesza and Mark Dredze and Koby
+		 Crammer and Lawrence K. Saul and Fernando Pereira},
+  booktitle = 	{Proceedings of the 13th International Conference on
+		 Artificial Intelligence and Statistics},
+  year = 	{2010},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">A theory of learning from different domains</span><br/>
+<span class="authors">Shai Ben-David, John Blitzer, Koby Crammer, Alex Kulesza, Fernando Pereira, and Jennifer Wortman Vaughan.</span>
+<span class="venue">Machine Learning, May 2010.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/adapt_mlj10.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('ben2010theory')" href="#">bib</a></span>
+<div id="ben2010theory" class="bibtex"><pre>
+@article{ben2010theory,
+  title = 	{A Theory of Learning from Different Domains},
+  author = 	{Shai Ben-David and John Blitzer and Koby Crammer and
+		 Alex Kulesza and Fernando Pereira and Jennifer
+		 Wortman Vaughan},
+  journal = 	{Machine Learning},
+  volume = 	{79},
+  number = 	{1},
+  pages = 	{151--175},
+  year = 	{2010},
+  publisher = 	{Springer},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Multi-domain learning by confidence-weighted parameter combination</span><br/>
+<span class="authors">Mark Dredze, Alex Kulesza, and Koby Crammer.</span>
+<span class="venue">Machine Learning, May 2010.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/cwadapt_mlj10.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('dredze2010multi')" href="#">bib</a></span>
+<div id="dredze2010multi" class="bibtex"><pre>
+@article{dredze2010multi,
+  title = 	{Multi-Domain Learning by Confidence-Weighted
+		 Parameter Combination},
+  author = 	{Mark Dredze and Alex Kulesza and Koby Crammer},
+  journal = 	{Machine Learning},
+  volume = 	{79},
+  number = 	{1},
+  pages = 	{123--149},
+  year = 	{2010},
+  publisher = 	{Springer},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Adaptive regularization of weight vectors</span><br/>
+<span class="authors">Koby Crammer, Alex Kulesza, and Mark Dredze.</span>
+<span class="venue">NIPS 2009.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/arow_nips09.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('crammer2010adaptive')" href="#">bib</a></span>
+<div id="crammer2010adaptive" class="bibtex"><pre>
+@inproceedings{crammer2010adaptive,
+  title = 	{Adaptive Regularization of Weight Vectors},
+  author = 	{Koby Crammer and Alex Kulesza and Mark Dredze},
+  booktitle = 	{Advances in Neural Information Processing Systems
+		 22},
+  year = 	{2010},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Approximate learning for structured prediction problems</span><br/>
+<span class="authors">Alex Kulesza.</span>
+<span class="venue">WPE-II report, November 2009.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/approx_wpeii09.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('kulesza2009approximate')" href="#">bib</a></span>
+<div id="kulesza2009approximate" class="bibtex"><pre>
+@unpublished{kulesza2009approximate,
+  title = 	{Approximate Learning for Structured Prediction
+		 Problems},
+  author = 	{Alex Kulesza},
+  month = 	{November},
+  year = 	{2009},
+  note = 	{University of Pennsylvania WPE-II report},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Multi-class confidence weighted algorithms</span><br/>
+<span class="authors">Koby Crammer, Mark Dredze, and Alex Kulesza.</span>
+<span class="venue">EMNLP 2009.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/mccw_emnlp09.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('crammer2009multi')" href="#">bib</a></span>
+<div id="crammer2009multi" class="bibtex"><pre>
+@inproceedings{crammer2009multi,
+  title = 	{Multi-Class Confidence Weighted Algorithms},
+  author = 	{Koby Crammer and Mark Dredze and Alex Kulesza},
+  booktitle = 	{Proceedings of the 2009 Conference on Empirical
+		 Methods in Natural Language Processing},
+  year = 	{2009},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Structured learning with approximate inference</span><br/>
+<span class="authors">Alex Kulesza and Fernando Pereira.</span>
+<span class="venue">NIPS 2007.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/approx_nips07.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('kulesza2008structured')" href="#">bib</a></span>
+<div id="kulesza2008structured" class="bibtex"><pre>
+@inproceedings{kulesza2008structured,
+  title = 	{Structured Learning with Approximate Inference},
+  author = 	{Alex Kulesza and Fernando Pereira},
+  booktitle = 	{Advances in Neural Information Processing Systems
+		 20},
+  year = 	{2008},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Learning bounds for domain adaptation</span><br/>
+<span class="authors">John Blitzer, Koby Crammer, Alex Kulesza, Fernando Pereira, and Jennifer Wortman.</span>
+<span class="venue">NIPS 2007.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/adapt_nips07.pdf">pdf</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/adapt_nips07_audio1.mp3">audio</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/adapt_nips07_audio2.mp3">remix</a></span>
+<span class="link"><a onclick="return toggle('blitzer2008learning')" href="#">bib</a></span>
+<div id="blitzer2008learning" class="bibtex"><pre>
+@inproceedings{blitzer2008learning,
+  title = 	{Learning Bounds for Domain Adaptation},
+  author = 	{John Blitzer and Koby Crammer and Alex Kulesza and
+		 Fernando Pereira and Jennifer Wortman},
+  booktitle = 	{Advances in Neural Information Processing Systems
+		 20},
+  year = 	{2008},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Empirical price modeling for sponsored search</span><br/>
+<span class="authors">Kuzman Ganchev, Alex Kulesza, Jinsong Tan, Ryan Gabbard, Qian Liu, and Michael Kearns.</span>
+<span class="venue">WINE 2007.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/sss_wine07.pdf">pdf</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/sss_www07.pdf">longer version</a></span>
+<span class="link"><a onclick="return toggle('ganchev2007empirical')" href="#">bib</a></span>
+<div id="ganchev2007empirical" class="bibtex"><pre>
+@inproceedings{ganchev2007empirical,
+  title = 	{Empirical Price Modeling for Sponsored Search},
+  author = 	{Kuzman Ganchev and Alex Kulesza and Jinsong Tan and
+		 Ryan Gabbard and Qian Liu and Michael Kearns},
+  booktitle = 	{Proceedings of the 3rd International Conference on
+		 Internet and Network Economics},
+  year = 	{2007},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">TBBL: a tree-based bidding language for iterative combinatorial exchanges</span><br/>
+<span class="authors">Ruggiero Cavallo, David C. Parkes, Adam I. Juda, Adam Kirsch, Alex Kulesza, S&eacute;bastien Lahaie, Benjamin Lubin, Loizos Michael, and Jeffrey Shneidman.</span>
+<span class="venue">IJCAI 2005.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/tbbl_ijcai05.pdf">pdf</a></span>
+<span class="link"><a onclick="return toggle('cavallo5tbbl')" href="#">bib</a></span>
+<div id="cavallo5tbbl" class="bibtex"><pre>
+@inproceedings{cavallo5tbbl,
+  title = 	{{TBBL}: a Tree-Based Bidding Language for Iterative
+		 Combinatorial Exchanges},
+  author = 	{Ruggiero Cavallo and David C. Parkes and Adam
+		 I. Juda and Adam Kirsch and Alex Kulesza and
+		 S{\'e}bastien Lahaie and Benjamin Lubin and Loizos
+		 Michael and Jeffrey Shneidman},
+  booktitle = 	{Multidisciplinary IJCAI-05 Workshop on Advances in
+		 Preference Handling},
+  year = 	{2005},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">A learning approach to improving sentence-level MT evaluation</span><br/>
+<span class="authors">Alex Kulesza and Stuart M. Shieber.</span>
+<span class="venue">TMI 2004.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/mteval_tmi04.pdf">pdf</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/mteval_thesis.pdf">thesis version</a></span>
+<span class="link"><a onclick="return toggle('kulesza2004learning')" href="#">bib</a></span>
+<div id="kulesza2004learning" class="bibtex"><pre>
+@inproceedings{kulesza2004learning,
+  title = 	{A Learning Approach to Improving Sentence-Level {MT}
+		 Evaluation},
+  author = 	{Alex Kulesza and Stuart M. Shieber},
+  booktitle = 	{Proceedings of the 10th International Conference on
+		 Theoretical and Methodological Issues in Machine
+		 Translation},
+  year = 	{2004},
+}</pre></div></div>
+
+<div class="ref">
+<span class="title">Confidence estimation for machine translation</span><br/>
+<span class="authors">John Blatz, Erin Fitzgerald, George Foster, Simona Gandrabur, Cyril Goutte, Alex Kulesza, Alberto Sanchis, and Nicola Ueffing.</span>
+<span class="venue">CoLing 2004.</span><br/>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/confest_coling04.pdf">pdf</a></span>
+<span class="link"><a href="http://web.eecs.umich.edu/~kulesza/pubs/confest_report04.pdf">long report</a></span>
+<span class="link"><a onclick="return toggle('blatz2004confidence')" href="#">bib</a></span>
+<div id="blatz2004confidence" class="bibtex"><pre>
+@inproceedings{blatz2004confidence,
+  title = 	{Confidence Estimation for Machine Translation},
+  author = 	{John Blatz and Erin Fitzgerald and George Foster and
+		 Simona Gandrabur and Cyril Goutte and Alex Kulesza
+		 and Alberto Sanchis and Nicola Ueffing},
+  booktitle = 	{Proceedings of the 20th International Conference on
+		 Computational Linguistics},
+  year = 	{2004},
+}</pre></div></div>
+
+    </div>
+    
+    </div>
+  </body>
+</html>
